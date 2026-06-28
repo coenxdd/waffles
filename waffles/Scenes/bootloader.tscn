@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ctkrwukwkq0rf"]
+
+[ext_resource type="Script" uid="uid://gna4po4wwasc" path="res://Scripts/bootloader.gd" id="1_7k22i"]
+
+[node name="Control" type="Control" unique_id=1703446596]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7k22i")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1192170034]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)

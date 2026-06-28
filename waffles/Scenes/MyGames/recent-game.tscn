@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://xfw4hcfvpukj"]
+
+[ext_resource type="Script" uid="uid://cw5ceard5cvj6" path="res://Scripts/MyGames/button.gd" id="1_mpgmt"]
+[ext_resource type="Texture2D" uid="uid://504vyjhlt1d2" path="res://Assets/MyGames/GameBTN-Selected.png" id="2_st83g"]
+[ext_resource type="Texture2D" uid="uid://dqmvxtxbndlfj" path="res://Assets/MyGames/GameBTN.png" id="3_qiyuu"]
+[ext_resource type="Texture2D" uid="uid://bb0xjuw7nv0jj" path="res://icon.svg" id="4_s33sl"]
+[ext_resource type="FontFile" uid="uid://d3fwxv42seiqc" path="res://Assets/Fonts/dinpro_medium.otf" id="5_q405w"]
+
+[node name="GAME" type="Panel" unique_id=91030469]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 60)
+offset_right = 429.0
+offset_bottom = 60.0
+script = ExtResource("1_mpgmt")
+
+[node name="SELECTED" type="TextureRect" parent="." unique_id=116212173]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 68.0
+texture = ExtResource("2_st83g")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="." unique_id=179754188]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 68.0
+texture = ExtResource("3_qiyuu")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="." unique_id=1309534723]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 10.0
+offset_right = 66.0
+offset_bottom = 50.0
+texture = ExtResource("4_s33sl")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="." unique_id=1693377074]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 13.0
+offset_right = 425.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("5_q405w")
+theme_override_font_sizes/font_size = 17
+text = "Halo: Reach"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Developer" type="Label" parent="." unique_id=956923267]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 30.0
+offset_right = 425.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.80784315, 0.80784315, 0.80784315, 1)
+theme_override_fonts/font = ExtResource("5_q405w")
+theme_override_font_sizes/font_size = 12
+text = "BUNGIE"
+clip_text = true
+text_overrun_behavior = 6

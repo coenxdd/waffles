@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://iq4wjx7rwwhs"]
+
+[ext_resource type="Script" uid="uid://bahoe36sfd4w6" path="res://Scripts/musiclist/button.gd" id="1_jr68l"]
+[ext_resource type="Texture2D" uid="uid://cfmgl6rncm6c5" path="res://Assets/Login/btnbg.png" id="2_dor05"]
+[ext_resource type="Texture2D" uid="uid://duaulksqf4cy" path="res://Assets/Login/btnfocus.png" id="3_rn4a3"]
+[ext_resource type="FontFile" uid="uid://d3fwxv42seiqc" path="res://Assets/Fonts/dinpro_medium.otf" id="4_xksdh"]
+[ext_resource type="Texture2D" uid="uid://c1q6t40kxixx0" path="res://Assets/waffle.jpg" id="5_adecl"]
+[ext_resource type="Texture2D" uid="uid://b4l5fmsdibxpt" path="res://Assets/HomeMenu/profile_pfp_overlay.png" id="6_ebdy8"]
+
+[node name="PROFILE" type="Panel" unique_id=1369257325]
+custom_minimum_size = Vector2(0, 60)
+script = ExtResource("1_jr68l")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1760615627]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 812.0
+offset_bottom = 68.0
+texture = ExtResource("2_dor05")
+expand_mode = 1
+
+[node name="SELECTED" type="TextureRect" parent="." unique_id=1002954823]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 812.0
+offset_bottom = 60.0
+texture = ExtResource("3_rn4a3")
+expand_mode = 1
+
+[node name="PlayerName" type="Label" parent="." unique_id=2146413899]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 10.0
+offset_right = 806.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0.16470589, 0.16078432, 0.16078432, 1)
+theme_override_fonts/font = ExtResource("4_xksdh")
+theme_override_font_sizes/font_size = 20
+text = "User"
+
+[node name="UserName" type="Label" parent="." unique_id=694458190]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 28.0
+offset_right = 806.0
+offset_bottom = 53.0
+theme_override_colors/font_color = Color(0.40784314, 0.40392157, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("4_xksdh")
+theme_override_font_sizes/font_size = 15
+text = "Player"
+
+[node name="PFP" type="TextureRect" parent="." unique_id=936072812]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 2.0
+offset_right = 115.0
+offset_bottom = 58.0
+texture = ExtResource("5_adecl")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="PFP" unique_id=659912161]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_ebdy8")
+expand_mode = 1

@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://cus1yysf6g7sn"]
+
+[ext_resource type="Texture2D" uid="uid://cav0w8g0a003r" path="res://Assets/HomeMenu/CARD_BGShadow.png" id="1_a4luj"]
+[ext_resource type="Script" uid="uid://ba50pbuhdceqv" path="res://Scripts/adcard.gd" id="1_n1frt"]
+[ext_resource type="Texture2D" uid="uid://d2ge2y5hflowo" path="res://Assets/HomeMenu/Card_BG.png" id="2_gw31x"]
+[ext_resource type="Texture2D" uid="uid://dfk47vuk0s8pb" path="res://Assets/HomeMenu/Card_Header.png" id="4_n1frt"]
+[ext_resource type="Texture2D" uid="uid://ca2ulqeyll5og" path="res://Assets/ADcards/bar.png" id="5_jabbo"]
+[ext_resource type="FontFile" uid="uid://d3fwxv42seiqc" path="res://Assets/Fonts/dinpro_medium.otf" id="5_qfhmo"]
+[ext_resource type="FontFile" uid="uid://25grvolhjry8" path="res://Assets/Fonts/dinpro_2.otf" id="6_jabbo"]
+[ext_resource type="Texture2D" uid="uid://cidcdrbqd22w7" path="res://Assets/ADcards/orangethingy.png" id="7_mv2fq"]
+
+[node name="ADCARD" type="Panel" unique_id=153415913]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(327, 236)
+script = ExtResource("1_n1frt")
+
+[node name="CardShadow" type="TextureRect" parent="." unique_id=2123208127]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("1_a4luj")
+
+[node name="Container" type="Panel" parent="." unique_id=505166050]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="Container" unique_id=1155836348]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("2_gw31x")
+expand_mode = 1
+
+[node name="Image" type="TextureRect" parent="Container" unique_id=1654304748]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.5
+offset_top = -118.0
+offset_right = 163.5
+offset_bottom = 69.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Bar" type="TextureRect" parent="Container" unique_id=406136564]
+visible = false
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 44.0
+texture = ExtResource("5_jabbo")
+expand_mode = 1
+
+[node name="BarText" type="Label" parent="Container/Bar" unique_id=652350010]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 9.0
+offset_right = 311.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("6_jabbo")
+theme_override_font_sizes/font_size = 14
+text = "Bar Text"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="OrangeThing" type="TextureRect" parent="Container/Bar" unique_id=1248667954]
+visible = false
+layout_mode = 0
+offset_right = 48.0
+offset_bottom = 45.0
+texture = ExtResource("7_mv2fq")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="Container" unique_id=702363175]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_n1frt")
+
+[node name="Title" type="Label" parent="Container" unique_id=614279233]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 191.0
+offset_right = 327.0
+offset_bottom = 216.0
+theme_override_fonts/font = ExtResource("5_qfhmo")
+theme_override_font_sizes/font_size = 20
+text = "Title"
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 5
+
+[node name="Sub" type="Label" parent="Container" unique_id=996050202]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 212.0
+offset_right = 326.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("6_jabbo")
+theme_override_font_sizes/font_size = 10
+text = "Subtitle"
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3

@@ -1,0 +1,4148 @@
+[gd_scene format=3 uid="uid://cre57qe0ptka4"]
+
+[ext_resource type="Script" uid="uid://c3whqpi0hn180" path="res://Scripts/flash_dash.gd" id="1_mhvbo"]
+[ext_resource type="Texture2D" uid="uid://bsddjdjruupfx" path="res://Assets/HomeMenu/backgrounds/aura_background.jpg" id="2_6xkda"]
+[ext_resource type="Texture2D" uid="uid://dsj8tsbtsasnk" path="res://Assets/HomeMenu/CardSelection.png" id="2_mhvbo"]
+[ext_resource type="Texture2D" uid="uid://w5pkm0gnug3f" path="res://Assets/HomeMenu/me.jpg" id="2_pypfv"]
+[ext_resource type="Texture2D" uid="uid://jowtukemq0tp" path="res://Assets/HOME_conceptrender.png" id="3_mmawy"]
+[ext_resource type="Texture2D" uid="uid://dslrukwb0h6uf" path="res://Assets/HomeMenu/BottomFloor.png" id="3_wpc83"]
+[ext_resource type="Script" uid="uid://dhipbdu33ly1v" path="res://Scripts/home_dash.gd" id="4_xce5j"]
+[ext_resource type="Texture2D" uid="uid://c1q6t40kxixx0" path="res://Assets/waffle.jpg" id="5_be5cm"]
+[ext_resource type="Script" uid="uid://bhemcmytkqqfu" path="res://Scripts/ThingForTheThing.gd" id="6_bbqmv"]
+[ext_resource type="Texture2D" uid="uid://cav0w8g0a003r" path="res://Assets/HomeMenu/CARD_BGShadow.png" id="6_eehda"]
+[ext_resource type="Texture2D" uid="uid://d2ge2y5hflowo" path="res://Assets/HomeMenu/Card_BG.png" id="6_fcrtd"]
+[ext_resource type="Texture2D" uid="uid://dfk47vuk0s8pb" path="res://Assets/HomeMenu/Card_Header.png" id="7_crwxi"]
+[ext_resource type="FontFile" uid="uid://d3fwxv42seiqc" path="res://Assets/Fonts/dinpro_medium.otf" id="9_eehda"]
+[ext_resource type="Texture2D" uid="uid://ddgsg6whipjq1" path="res://Assets/HomeMenu/ProfileCard.png" id="10_1sqjb"]
+[ext_resource type="FontFile" uid="uid://25grvolhjry8" path="res://Assets/Fonts/dinpro_2.otf" id="10_mjpec"]
+[ext_resource type="Texture2D" uid="uid://bysx7xeutsq58" path="res://Assets/HomeMenu/ChannelBG.png" id="12_8uvd2"]
+[ext_resource type="Texture2D" uid="uid://cryhvrg2e46po" path="res://Assets/HomeMenu/GamesCard_BG.png" id="12_pypfv"]
+[ext_resource type="Texture2D" uid="uid://cr8m3cew1u05w" path="res://Assets/HomeMenu/SettingsCard_BG.png" id="13_6cl0f"]
+[ext_resource type="Texture2D" uid="uid://bkl1aaahgsjkf" path="res://Assets/HomeMenu/profile_bg.png" id="13_ahvde"]
+[ext_resource type="Texture2D" uid="uid://b4l5fmsdibxpt" path="res://Assets/HomeMenu/profile_pfp_overlay.png" id="14_xihr3"]
+[ext_resource type="Texture2D" uid="uid://bb0xjuw7nv0jj" path="res://icon.svg" id="15_24srd"]
+[ext_resource type="FontFile" uid="uid://brs82dkwf2u1u" path="res://Assets/Fonts/dinpro_light.otf" id="15_pypfv"]
+[ext_resource type="FontFile" uid="uid://dtve87rop6p3v" path="res://Assets/Fonts/dinpro_bold.otf" id="16_6cl0f"]
+[ext_resource type="Script" uid="uid://xgnkj62mt4bs" path="res://Scripts/time.gd" id="16_ahvde"]
+[ext_resource type="FontFile" uid="uid://bcv1srywx2j36" path="res://Assets/Fonts/dinpro_black.otf" id="17_bbqmv"]
+[ext_resource type="Script" uid="uid://crmplp7y5pl3v" path="res://Scenes/spectrum/show_spectrum.gd" id="24_1sqjb"]
+[ext_resource type="Texture2D" uid="uid://bq6vjto7dymm8" path="res://Assets/systemsettings/ico_64x_console.png" id="24_lqnmw"]
+[ext_resource type="Script" uid="uid://ppktoouteur4" path="res://Scripts/music_player.gd" id="24_vtxt3"]
+[ext_resource type="Texture2D" uid="uid://reuor1lkgmvl" path="res://Assets/systemsettings/network_64x.png" id="25_3tniv"]
+[ext_resource type="Texture2D" uid="uid://bw4j6w7jwgmia" path="res://Assets/MusicPlayer/topbar.png" id="25_p1upm"]
+[ext_resource type="Texture2D" uid="uid://djbhqr558qfd8" path="res://Assets/MusicPlayer/panel.png" id="26_eoa6k"]
+[ext_resource type="Texture2D" uid="uid://n38kfrnju3hy" path="res://Assets/MusicPlayer/bar2.png" id="27_vtxt3"]
+[ext_resource type="Texture2D" uid="uid://s4hv2i3gl04p" path="res://Assets/MusicPlayer/infobg.png" id="28_r8g4m"]
+[ext_resource type="Texture2D" uid="uid://btgn58bk5anl3" path="res://Assets/MusicPlayer/cover-overlay.png" id="29_am3to"]
+[ext_resource type="Texture2D" uid="uid://blyswomihiw8t" path="res://Assets/HomeMenu/ChannelBG-Selection.png" id="29_ecmyi"]
+[ext_resource type="Texture2D" uid="uid://dyelqpmvl4w23" path="res://Assets/MusicPlayer/buttonbg.png" id="29_two4v"]
+[ext_resource type="Texture2D" uid="uid://cuqu0wrxhe02w" path="res://Assets/MusicPlayer/btn-fullscreen.png" id="30_1rnnm"]
+[ext_resource type="FontFile" uid="uid://bhlp30srqd8jh" path="res://Assets/Fonts/dinpro.otf" id="30_two4v"]
+[ext_resource type="Texture2D" uid="uid://c0oli5uqj7cko" path="res://Assets/MusicPlayer/btn-prev.png" id="31_7outr"]
+[ext_resource type="Texture2D" uid="uid://vhsi5vp2uomf" path="res://Assets/MusicPlayer/foot.png" id="32_am3to"]
+[ext_resource type="Texture2D" uid="uid://dwfgvd4vvgpfo" path="res://Assets/MusicPlayer/btn-pause.png" id="32_ukvuy"]
+[ext_resource type="Texture2D" uid="uid://cg07gypf7fhui" path="res://Assets/MusicPlayer/progressbg.png" id="33_two4v"]
+[ext_resource type="Texture2D" uid="uid://dgwx5ufxwnlv0" path="res://Assets/MusicPlayer/btn-skip.png" id="33_usdkb"]
+[ext_resource type="Texture2D" uid="uid://depd1ysc2is7l" path="res://Assets/MusicPlayer/progress.png" id="34_a8qkq"]
+[ext_resource type="Texture2D" uid="uid://cxib4yxe223m1" path="res://Assets/MusicPlayer/btn-volume.png" id="34_yi18o"]
+[ext_resource type="Texture2D" uid="uid://drx6fld2ja00q" path="res://Assets/MusicList/panelbg.png" id="41_6uuvj"]
+[ext_resource type="Script" uid="uid://b4ksgu4sepk06" path="res://Scripts/musiclist/music_list.gd" id="41_frhhf"]
+[ext_resource type="Texture2D" uid="uid://bx1hwtqiw5knt" path="res://Assets/MusicList/PanelHeader.png" id="42_frhhf"]
+[ext_resource type="Script" uid="uid://bahoe36sfd4w6" path="res://Scripts/musiclist/button.gd" id="43_iwluo"]
+[ext_resource type="Texture2D" uid="uid://dkygwiospcj3j" path="res://Assets/MusicList/btn.png" id="44_ns6xc"]
+[ext_resource type="Texture2D" uid="uid://buw4gknrlpamn" path="res://Assets/MusicList/btnselected.png" id="45_dj8xe"]
+[ext_resource type="Script" uid="uid://dmv2hwi1x07qq" path="res://Scripts/musiclist/music_list-track.gd" id="47_iwluo"]
+[ext_resource type="Texture2D" uid="uid://c5vg48b1ysxr0" path="res://Assets/MusicList/coveroverlay.png" id="48_iwluo"]
+[ext_resource type="Texture2D" uid="uid://bamax3asbfhhm" path="res://Assets/MusicList/albumholder-shadow.png" id="48_xce5j"]
+[ext_resource type="Texture2D" uid="uid://begqb4sapvsmx" path="res://Assets/MyApps/youtube.png" id="50_6xkda"]
+[ext_resource type="Texture2D" uid="uid://cst5oghx0mojf" path="res://Assets/MyApps/appcover-overlay.png" id="51_y1ltf"]
+[ext_resource type="Texture2D" uid="uid://da3w4e8dkvf8g" path="res://Assets/MyApps/selection.png" id="52_ttt3q"]
+[ext_resource type="Script" uid="uid://c8tyvb0y82pn3" path="res://Scripts/MyApps/my_apps.gd" id="53_6xkda"]
+[ext_resource type="Texture2D" uid="uid://bjhugnl7tvbyc" path="res://Assets/MyApps/builtinapp/-1/LOGO.png" id="53_lqnmw"]
+[ext_resource type="Texture2D" uid="uid://b72m562051v0h" path="res://Assets/buttonicons/A.png" id="54_3tniv"]
+[ext_resource type="Texture2D" uid="uid://cgsdsrev1iyg0" path="res://Assets/buttonicons/B.png" id="55_670wg"]
+[ext_resource type="Texture2D" uid="uid://clwatclpic2hu" path="res://Assets/buttonicons/X.png" id="56_kk87v"]
+[ext_resource type="Texture2D" uid="uid://cycaio3x7bv0x" path="res://Assets/MyApps/Kodi.png" id="56_y1ltf"]
+[ext_resource type="Script" uid="uid://dcacmcvfao1sb" path="res://Scripts/Settings/systemsettings.gd" id="63_b15yc"]
+[ext_resource type="Texture2D" uid="uid://bg02iagvk5ckh" path="res://Assets/systemsettings/panel2.png" id="63_rpxjp"]
+[ext_resource type="Texture2D" uid="uid://bexvgk0vri4yg" path="res://Assets/systemsettings/panel1.png" id="64_mlj0i"]
+[ext_resource type="Texture2D" uid="uid://bl1bo2d3y7j7o" path="res://Assets/systemsettings/panel3.png" id="65_qglq6"]
+[ext_resource type="Texture2D" uid="uid://dd46n62t6wkae" path="res://Assets/systemsettings/btn.png" id="66_mlj0i"]
+[ext_resource type="Script" uid="uid://cxeg01d8x4edo" path="res://Scripts/Settings/button.gd" id="66_qglq6"]
+[ext_resource type="Texture2D" uid="uid://5m2xtmwgpu5s" path="res://Assets/systemsettings/selection.png" id="67_qglq6"]
+[ext_resource type="Texture2D" uid="uid://dg2a0wlek164b" path="res://Assets/systemsettings/ico_64x_MU.png" id="68_4bhfc"]
+[ext_resource type="Texture2D" uid="uid://yy21wxw3e8ke" path="res://Assets/systemsettings/ico_32x_network.png" id="69_b15yc"]
+[ext_resource type="Texture2D" uid="uid://bgl1mn1hwigm6" path="res://Assets/systemsettings/ico_96x_IPTV.png" id="70_ecmyi"]
+[ext_resource type="Texture2D" uid="uid://biqf1h43mw77b" path="res://Assets/systemsettings/ico_64x_AccountManagement.png" id="71_2kw3j"]
+[ext_resource type="Texture2D" uid="uid://dayhlc2w3get4" path="res://Assets/MyGames/PanelBG.png" id="75_jujsw"]
+[ext_resource type="Script" uid="uid://cwlyfl1s31etk" path="res://Scripts/MyGames/my_games.gd" id="75_mmawy"]
+[ext_resource type="Texture2D" uid="uid://dt8tyhhgmr33s" path="res://Assets/MyGames/Header.png" id="76_mmawy"]
+[ext_resource type="Texture2D" uid="uid://ckfop2ui35wps" path="res://Assets/MyGames/CollectionsPanel.png" id="77_316tg"]
+[ext_resource type="Texture2D" uid="uid://cehgqd72of5x8" path="res://Assets/MyGames/CollectionsHeader.png" id="78_g6fhy"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_y1ltf"]
+viewport_path = NodePath("MusicList/SubViewPort")
+
+[sub_resource type="Animation" id="Animation_bbqmv"]
+resource_name = "ChangeCard"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_24srd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m6fp3"]
+_data = {
+&"ChangeCard": SubResource("Animation_bbqmv"),
+&"RESET": SubResource("Animation_24srd")
+}
+
+[sub_resource type="Animation" id="Animation_4pu0f"]
+resource_name = "FadeIn"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(0.28717452, 0.1538931),
+"update": 0,
+"values": [Vector2(1.5, 1.5), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_skomt"]
+resource_name = "FadeOut"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(0.28717452, 0.1538931),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1.5)]
+}
+
+[sub_resource type="Animation" id="Animation_e8dbf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6uuvj"]
+_data = {
+&"FadeIn": SubResource("Animation_4pu0f"),
+&"FadeOut": SubResource("Animation_skomt"),
+&"RESET": SubResource("Animation_e8dbf")
+}
+
+[sub_resource type="Animation" id="Animation_iwluo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(609.74, 130)]
+}
+
+[sub_resource type="Animation" id="Animation_ns6xc"]
+resource_name = "go_to_fullscreen"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.26666668),
+"transitions": PackedFloat32Array(0.2679433, 0.13397177),
+"update": 0,
+"values": [Vector2(609.74, 130), Vector2(260, 130)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dj8xe"]
+_data = {
+&"RESET": SubResource("Animation_iwluo"),
+&"go_to_fullscreen": SubResource("Animation_ns6xc")
+}
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ttt3q"]
+viewport_path = NodePath("MusicList/SubViewPort")
+
+[node name="Control" type="Control" unique_id=1806243104]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mhvbo")
+
+[node name="WALLPAPER" type="TextureRect" parent="." unique_id=330766815]
+modulate = Color(0.86, 0.86, 0.86, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6xkda")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=605937486]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_mmawy")
+expand_mode = 1
+
+[node name="HomeDash" type="Control" parent="." unique_id=1442244188]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("4_xce5j")
+
+[node name="Floor" type="TextureRect" parent="HomeDash" unique_id=573906426]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -233.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="CardSelection" type="TextureRect" parent="HomeDash" unique_id=1772746621]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -471.0
+offset_top = -390.0
+offset_right = -121.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_mhvbo")
+
+[node name="CardController" type="Control" parent="HomeDash" unique_id=312848277]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="1" type="HBoxContainer" parent="HomeDash/CardController" unique_id=858432822]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="1" type="Panel" parent="HomeDash/CardController/1" unique_id=598049977]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/1/1" unique_id=1360279728]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/1/1" unique_id=879249721]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/1/1/Container" unique_id=1641644525]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/1/1/Container" unique_id=1896400314]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/1/1/Container" unique_id=1766995297]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 327.0
+offset_bottom = 97.0
+texture = ExtResource("10_1sqjb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="HomeDash/CardController/1/1/Container" unique_id=1062385260]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Your Profile"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ProfileName" type="Label" parent="HomeDash/CardController/1/1/Container" unique_id=1395581943]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 326.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 17
+text = "poopshmoop"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quote" type="Label" parent="HomeDash/CardController/1/1/Container" unique_id=1891239000]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 72.0
+offset_right = 324.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 7
+text = "“do yall lowkey eat the hand sanitizer”"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/1/1/Container" unique_id=626335308]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "4 friends"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PFP" type="TextureRect" parent="HomeDash/CardController/1/1/Container" unique_id=565873736]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 86.0
+offset_bottom = 87.0
+texture = ExtResource("5_be5cm")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/1/1/Container/PFP" unique_id=2020797090]
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/CardController/1/1/Container" unique_id=1805519035]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 182.0
+offset_bottom = 80.0
+theme_override_constants/separation = 0
+
+[node name="Points" type="Label" parent="HomeDash/CardController/1/1/Container/PointContainer" unique_id=1573820198]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/CardController/1/1/Container/PointContainer" unique_id=1475820476]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="2" type="Panel" parent="HomeDash/CardController/1" unique_id=2042585680]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/1/2" unique_id=548617979]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/1/2" unique_id=2133573704]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/1/2/Container" unique_id=1246010410]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="CardBG2" type="TextureRect" parent="HomeDash/CardController/1/2/Container" unique_id=1712671860]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("12_pypfv")
+expand_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HomeDash/CardController/1/2/Container" unique_id=1673046957]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 54.0
+offset_right = 414.0
+offset_bottom = 193.0
+theme_override_constants/separation = 11
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/1/2/Container" unique_id=1201278234]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/1/2/Container" unique_id=1324024382]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "My Games"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/1/2/Container" unique_id=1552308080]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "Whoop"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="3" type="Panel" parent="HomeDash/CardController/1" unique_id=1278301694]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/1/3" unique_id=876339792]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/1/3" unique_id=1781827318]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/1/3/Container" unique_id=1608530081]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/1/3/Container" unique_id=1284859310]
+modulate = Color(1, 1, 1, 0.53333336)
+layout_mode = 0
+offset_left = -10.0
+offset_right = 368.0241
+offset_bottom = 212.0
+texture = SubResource("ViewportTexture_y1ltf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/1/3/Container" unique_id=2129724831]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/1/3/Container" unique_id=627599413]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "My Music"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/1/3/Container" unique_id=1109531355]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "0 Tracks"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="4" type="Panel" parent="HomeDash/CardController/1" unique_id=1992503315]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/1/4" unique_id=638040580]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/1/4" unique_id=1917903357]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/1/4/Container" unique_id=1267566096]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="HomeDash/CardController/1/4/Container" unique_id=2554669]
+layout_mode = 0
+offset_right = 326.0
+offset_bottom = 187.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="-1" type="Panel" parent="HomeDash/CardController/1/4/Container/GridContainer" unique_id=132248303]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(115, 115)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/1/4/Container/GridContainer/-1" unique_id=504632252]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("50_6xkda")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/1/4/Container/GridContainer/-1" unique_id=374229041]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_y1ltf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="0" type="Panel" parent="HomeDash/CardController/1/4/Container/GridContainer" unique_id=1922317716]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(115, 115)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/1/4/Container/GridContainer/0" unique_id=175769515]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("56_y1ltf")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/1/4/Container/GridContainer/0" unique_id=1674143059]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_y1ltf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/1/4/Container" unique_id=2060945233]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/1/4/Container" unique_id=445023284]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "My Apps"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/1/4/Container" unique_id=946527404]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = " 2 Apps"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="5" type="Panel" parent="HomeDash/CardController/1" unique_id=1644952382]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/1/5" unique_id=1107308391]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/1/5" unique_id=1148317128]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/1/5/Container" unique_id=1696075517]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="CardBG2" type="TextureRect" parent="HomeDash/CardController/1/5/Container" unique_id=1603543615]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("13_6cl0f")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="HomeDash/CardController/1/5/Container" unique_id=912359733]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = -78.0
+offset_right = -80.5
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_lqnmw")
+expand_mode = 1
+
+[node name="Network" type="TextureRect" parent="HomeDash/CardController/1/5/Container" unique_id=906871079]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 93.5
+offset_top = -70.0
+offset_right = 125.5
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_3tniv")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/1/5/Container" unique_id=1566790629]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/1/5/Container" unique_id=1635429893]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "System Settings"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/1/5/Container" unique_id=1033706890]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "Whoop"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="2" type="HBoxContainer" parent="HomeDash/CardController" unique_id=1950806539]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="1" type="Panel" parent="HomeDash/CardController/2" unique_id=1849512332]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/2/1" unique_id=2133823988]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/2/1" unique_id=645444412]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/2/1/Container" unique_id=1651851716]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="HomeDash/CardController/2/1/Container" unique_id=368304291]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.5
+offset_top = -126.0
+offset_right = 191.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pypfv")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/2/1/Container" unique_id=1960859138]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/2/1/Container" unique_id=1169632038]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Mirror's Edge"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/2/1/Container" unique_id=1854472004]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "New Theme"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="2" type="Panel" parent="HomeDash/CardController/2" unique_id=1593308996]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/2/2" unique_id=1927567867]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/2/2" unique_id=1584799066]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/2/2/Container" unique_id=658438101]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="HomeDash/CardController/2/2/Container" unique_id=463003308]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.5
+offset_top = -126.0
+offset_right = 262.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_be5cm")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/2/2/Container" unique_id=69058618]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/2/2/Container" unique_id=1811390787]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Placeholder"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/2/2/Container" unique_id=376721639]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "Something about waffles"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="3" type="HBoxContainer" parent="HomeDash/CardController" unique_id=236892570]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="1" type="Panel" parent="HomeDash/CardController/3" unique_id=437868594]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/3/1" unique_id=1052881310]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/3/1" unique_id=87680101]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/3/1/Container" unique_id=694539744]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/3/1/Container" unique_id=343878024]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/3/1/Container" unique_id=1137517897]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 327.0
+offset_bottom = 97.0
+texture = ExtResource("10_1sqjb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="HomeDash/CardController/3/1/Container" unique_id=1746367811]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Dave The Cheese Wizard"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ProfileName" type="Label" parent="HomeDash/CardController/3/1/Container" unique_id=1044125831]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 326.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 17
+text = "doodoofart26"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quote" type="Label" parent="HomeDash/CardController/3/1/Container" unique_id=2091449004]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 72.0
+offset_right = 324.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 7
+text = "“i do crack”"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/3/1/Container" unique_id=1116306072]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "4 friends"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PFP" type="TextureRect" parent="HomeDash/CardController/3/1/Container" unique_id=141932106]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 86.0
+offset_bottom = 87.0
+texture = ExtResource("15_24srd")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/3/1/Container/PFP" unique_id=108709187]
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/CardController/3/1/Container" unique_id=1896191320]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 182.0
+offset_bottom = 80.0
+theme_override_constants/separation = 0
+
+[node name="Points" type="Label" parent="HomeDash/CardController/3/1/Container/PointContainer" unique_id=416677421]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "40"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/CardController/3/1/Container/PointContainer" unique_id=2042737306]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="2" type="Panel" parent="HomeDash/CardController/3" unique_id=380089912]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/3/2" unique_id=1567351995]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/3/2" unique_id=594372094]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/3/2/Container" unique_id=576025789]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/3/2/Container" unique_id=977741910]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/3/2/Container" unique_id=1626903827]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 327.0
+offset_bottom = 97.0
+texture = ExtResource("10_1sqjb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="HomeDash/CardController/3/2/Container" unique_id=1168674374]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Dave The Cheese Wizard"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ProfileName" type="Label" parent="HomeDash/CardController/3/2/Container" unique_id=1935503762]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 326.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 17
+text = "doodoofart26"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quote" type="Label" parent="HomeDash/CardController/3/2/Container" unique_id=956452262]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 72.0
+offset_right = 324.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 7
+text = "“i do crack”"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/3/2/Container" unique_id=1084173170]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "4 friends"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PFP" type="TextureRect" parent="HomeDash/CardController/3/2/Container" unique_id=1249475258]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 86.0
+offset_bottom = 87.0
+texture = ExtResource("15_24srd")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/3/2/Container/PFP" unique_id=1314354194]
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/CardController/3/2/Container" unique_id=254055852]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 182.0
+offset_bottom = 80.0
+theme_override_constants/separation = 0
+
+[node name="Points" type="Label" parent="HomeDash/CardController/3/2/Container/PointContainer" unique_id=1562208667]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "40"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/CardController/3/2/Container/PointContainer" unique_id=1490795351]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="3" type="Panel" parent="HomeDash/CardController/3" unique_id=1785300313]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/3/3" unique_id=1245329852]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/3/3" unique_id=1470307496]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/3/3/Container" unique_id=2100176671]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/3/3/Container" unique_id=1862048592]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/3/3/Container" unique_id=262982707]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 327.0
+offset_bottom = 97.0
+texture = ExtResource("10_1sqjb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="HomeDash/CardController/3/3/Container" unique_id=724120717]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Dave The Cheese Wizard"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ProfileName" type="Label" parent="HomeDash/CardController/3/3/Container" unique_id=1429037090]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 326.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 17
+text = "doodoofart26"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quote" type="Label" parent="HomeDash/CardController/3/3/Container" unique_id=1627971996]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 72.0
+offset_right = 324.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 7
+text = "“i do crack”"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/3/3/Container" unique_id=1066034643]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "4 friends"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PFP" type="TextureRect" parent="HomeDash/CardController/3/3/Container" unique_id=1637003790]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 86.0
+offset_bottom = 87.0
+texture = ExtResource("15_24srd")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/3/3/Container/PFP" unique_id=936249805]
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/CardController/3/3/Container" unique_id=508472946]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 182.0
+offset_bottom = 80.0
+theme_override_constants/separation = 0
+
+[node name="Points" type="Label" parent="HomeDash/CardController/3/3/Container/PointContainer" unique_id=1730497585]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "40"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/CardController/3/3/Container/PointContainer" unique_id=457519424]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="4" type="Panel" parent="HomeDash/CardController/3" unique_id=325801057]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/3/4" unique_id=252369901]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/3/4" unique_id=414973080]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/3/4/Container" unique_id=1224802936]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/3/4/Container" unique_id=1779902614]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/CardController/3/4/Container" unique_id=1866059365]
+layout_mode = 0
+offset_top = 28.0
+offset_right = 327.0
+offset_bottom = 97.0
+texture = ExtResource("10_1sqjb")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="HomeDash/CardController/3/4/Container" unique_id=1850996568]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Dave The Cheese Wizard"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ProfileName" type="Label" parent="HomeDash/CardController/3/4/Container" unique_id=521540990]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 326.0
+offset_bottom = 61.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 17
+text = "doodoofart26"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Quote" type="Label" parent="HomeDash/CardController/3/4/Container" unique_id=892164692]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 72.0
+offset_right = 324.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 7
+text = "“i do crack”"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/3/4/Container" unique_id=1082873749]
+visible = false
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "4 friends"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PFP" type="TextureRect" parent="HomeDash/CardController/3/4/Container" unique_id=1803799883]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 36.0
+offset_right = 86.0
+offset_bottom = 87.0
+texture = ExtResource("15_24srd")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/CardController/3/4/Container/PFP" unique_id=1114722993]
+layout_mode = 0
+offset_right = 51.0
+offset_bottom = 51.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/CardController/3/4/Container" unique_id=573260318]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 99.0
+offset_top = 52.0
+offset_right = 182.0
+offset_bottom = 80.0
+theme_override_constants/separation = 0
+
+[node name="Points" type="Label" parent="HomeDash/CardController/3/4/Container/PointContainer" unique_id=1942580463]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "40"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/CardController/3/4/Container/PointContainer" unique_id=1175874748]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="4" type="HBoxContainer" parent="HomeDash/CardController" unique_id=1370800312]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="5" type="HBoxContainer" parent="HomeDash/CardController" unique_id=1722191504]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="1" type="Panel" parent="HomeDash/CardController/5" unique_id=2130503106]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/5/1" unique_id=208877709]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/5/1" unique_id=1027255522]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/5/1/Container" unique_id=981546835]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="HomeDash/CardController/5/1/Container" unique_id=775978135]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.5
+offset_top = -126.0
+offset_right = 191.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pypfv")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/5/1/Container" unique_id=479223768]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/5/1/Container" unique_id=72406149]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Mirror's Edge"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/5/1/Container" unique_id=772233310]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "New Theme"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="2" type="Panel" parent="HomeDash/CardController/5" unique_id=1253455209]
+custom_minimum_size = Vector2(327, 236)
+layout_mode = 2
+
+[node name="CardShadow" type="TextureRect" parent="HomeDash/CardController/5/2" unique_id=252535125]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 331.0
+offset_bottom = 244.0
+texture = ExtResource("6_eehda")
+
+[node name="Container" type="Panel" parent="HomeDash/CardController/5/2" unique_id=1052201370]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBG" type="TextureRect" parent="HomeDash/CardController/5/2/Container" unique_id=585317809]
+layout_mode = 0
+offset_right = 327.0
+offset_bottom = 236.0
+texture = ExtResource("6_fcrtd")
+expand_mode = 1
+
+[node name="Icon" type="TextureRect" parent="HomeDash/CardController/5/2/Container" unique_id=549592190]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -165.5
+offset_top = -126.0
+offset_right = 262.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_be5cm")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="HomeDash/CardController/5/2/Container" unique_id=1191348781]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -167.5
+offset_top = -57.0
+offset_right = 167.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_crwxi")
+
+[node name="Title" type="Label" parent="HomeDash/CardController/5/2/Container" unique_id=1593675337]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 196.0
+offset_right = 301.0
+offset_bottom = 221.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Placeholder"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sub" type="Label" parent="HomeDash/CardController/5/2/Container" unique_id=539957261]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 198.0
+offset_right = 301.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("10_mjpec")
+theme_override_font_sizes/font_size = 10
+text = "Something about waffles"
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="6" type="HBoxContainer" parent="HomeDash/CardController" unique_id=875642497]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="7" type="HBoxContainer" parent="HomeDash/CardController" unique_id=20934211]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="8" type="HBoxContainer" parent="HomeDash/CardController" unique_id=545681491]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -460.0
+offset_top = -379.0
+offset_right = 1944.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 17
+script = ExtResource("6_bbqmv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HomeDash/CardController" unique_id=1447768481]
+libraries/ = SubResource("AnimationLibrary_m6fp3")
+
+[node name="ChannelMenu" type="Panel" parent="HomeDash" unique_id=1599895478]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -436.0
+offset_top = -619.0
+offset_right = -233.0
+offset_bottom = -400.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BG" type="TextureRect" parent="HomeDash/ChannelMenu" unique_id=1043475327]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -101.5
+offset_top = -219.0
+offset_right = 100.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("12_8uvd2")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="HomeDash/ChannelMenu" unique_id=1341223225]
+layout_mode = 0
+offset_top = 180.0
+offset_right = 202.0
+offset_bottom = 212.0
+texture = ExtResource("29_ecmyi")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HomeDash/ChannelMenu" unique_id=2005774385]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_right = -1.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -3
+alignment = 2
+
+[node name="Channel8" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=2059824682]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "Spotlight"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel7" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=819898807]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "Events"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel6" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=1303616518]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "Media Marketplace"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel5" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=1390322720]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "Game Marketplace"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel4" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=814213663]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "INSIDER"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel3" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=668746153]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "Freinds"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Channel2" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=1598594754]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72673184, 0.7267317, 0.7267317, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "My Community"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="CURchannel" type="Label" parent="HomeDash/ChannelMenu/VBoxContainer" unique_id=1596431342]
+custom_minimum_size = Vector2(194, 38)
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.1254902)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 28
+text = "Home"
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="ProfileCard" type="Panel" parent="HomeDash" unique_id=252053935]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -530.0
+offset_top = 48.0
+offset_right = -76.0
+offset_bottom = 203.0
+grow_horizontal = 0
+
+[node name="BG" type="TextureRect" parent="HomeDash/ProfileCard" unique_id=1563879408]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 36.0
+offset_right = 435.0
+offset_bottom = 128.0
+texture = ExtResource("13_ahvde")
+expand_mode = 1
+
+[node name="PFP" type="TextureRect" parent="HomeDash/ProfileCard" unique_id=1432625062]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 48.0
+offset_right = 408.0
+offset_bottom = 108.0
+texture = ExtResource("5_be5cm")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="HomeDash/ProfileCard/PFP" unique_id=515622550]
+layout_mode = 0
+offset_right = 60.0
+offset_bottom = 60.0
+texture = ExtResource("14_xihr3")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="HomeDash/ProfileCard" unique_id=575269429]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 8.0
+offset_right = 409.0
+offset_bottom = 33.0
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Username" type="Label" parent="HomeDash/ProfileCard" unique_id=813790595]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 53.0
+offset_right = 339.0
+offset_bottom = 79.0
+theme_override_fonts/font = ExtResource("16_6cl0f")
+theme_override_font_sizes/font_size = 20
+text = "averyrealusername"
+horizontal_alignment = 2
+
+[node name="PointContainer" type="HBoxContainer" parent="HomeDash/ProfileCard" unique_id=26473192]
+modulate = Color(0.5152081, 0.5152081, 0.5152081, 1)
+layout_mode = 0
+offset_left = 256.0
+offset_top = 74.0
+offset_right = 339.0
+offset_bottom = 102.0
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="Points" type="Label" parent="HomeDash/ProfileCard/PointContainer" unique_id=1376131745]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 15
+text = "0"
+horizontal_alignment = 2
+
+[node name="PS" type="Label" parent="HomeDash/ProfileCard/PointContainer" unique_id=669490632]
+custom_minimum_size = Vector2(0, 15.91)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("17_bbqmv")
+theme_override_font_sizes/font_size = 10
+text = "PS"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HomeDash" unique_id=1113363596]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="NetworkRequests" type="Node" parent="HomeDash" unique_id=1833402828]
+
+[node name="GetInsider" type="HTTPRequest" parent="HomeDash/NetworkRequests" unique_id=1118279402]
+
+[node name="Insider-GetAdImage" type="HTTPRequest" parent="HomeDash/NetworkRequests/GetInsider" unique_id=1663602996]
+
+[node name="GetSpotlight" type="HTTPRequest" parent="HomeDash/NetworkRequests" unique_id=381763444]
+
+[node name="Spotlight-GetAdImage" type="HTTPRequest" parent="HomeDash/NetworkRequests/GetSpotlight" unique_id=1049661362]
+
+[node name="GetEvents" type="HTTPRequest" parent="HomeDash/NetworkRequests" unique_id=1942288759]
+
+[node name="Events-GetAdImage" type="HTTPRequest" parent="HomeDash/NetworkRequests/GetEvents" unique_id=1856718384]
+
+[node name="GetMedia" type="HTTPRequest" parent="HomeDash/NetworkRequests" unique_id=807288827]
+
+[node name="Media-GetAdImage" type="HTTPRequest" parent="HomeDash/NetworkRequests/GetMedia" unique_id=913613419]
+
+[node name="NetworkTest" type="HTTPRequest" parent="HomeDash/NetworkRequests" unique_id=1369240123]
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="HomeDash" unique_id=1345824275]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 204.0
+offset_top = -77.0
+offset_right = 506.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="HomeDash/ButtonIndicator" unique_id=319161726]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="HomeDash/ButtonIndicator/Abtn" unique_id=1439789828]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HomeDash/ButtonIndicator/Abtn" unique_id=1629465579]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="HomeDash/ButtonIndicator" unique_id=1316113713]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="HomeDash/ButtonIndicator/Bbtn" unique_id=1288810726]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HomeDash/ButtonIndicator/Bbtn" unique_id=667709261]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Music"
+
+[node name="Xbtn" type="HBoxContainer" parent="HomeDash/ButtonIndicator" unique_id=194373023]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="HomeDash/ButtonIndicator/Xbtn" unique_id=566442728]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HomeDash/ButtonIndicator/Xbtn" unique_id=122901647]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="MusicPlayer" type="Control" parent="." unique_id=1144153839]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("24_vtxt3")
+
+[node name="ColorRect2" type="ColorRect" parent="MusicPlayer" unique_id=1267873418]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15667456, 0.15667456, 0.15667456, 1)
+
+[node name="Visualizer" type="Control" parent="MusicPlayer" unique_id=802714505]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.26001
+offset_top = -230.0
+offset_right = 569.7385
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(300, 300)
+script = ExtResource("24_1sqjb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MusicPlayer/Visualizer" unique_id=2147478823]
+libraries/ = SubResource("AnimationLibrary_dj8xe")
+
+[node name="Floor" type="TextureRect" parent="MusicPlayer" unique_id=1496545483]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="BAR" type="TextureRect" parent="MusicPlayer" unique_id=1444448210]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="MusicPlayer/BAR" unique_id=2120538666]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="MusicPlayer/BAR" unique_id=1492100327]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 400.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "Music Player"
+
+[node name="Panel" type="TextureRect" parent="MusicPlayer" unique_id=83241552]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -527.0
+offset_top = -565.36
+offset_right = -90.0
+offset_bottom = -108.359985
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("26_eoa6k")
+expand_mode = 1
+
+[node name="Bar" type="TextureRect" parent="MusicPlayer/Panel" unique_id=1150713113]
+layout_mode = 0
+offset_top = -49.0
+offset_right = 437.0
+offset_bottom = 8.0
+texture = ExtResource("27_vtxt3")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicPlayer/Panel/Bar" unique_id=731487357]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -18.5
+offset_right = 287.0
+offset_bottom = 9.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Now Playing"
+
+[node name="ButtonPanel" type="TextureRect" parent="MusicPlayer/Panel" unique_id=272125800]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 179.35999
+offset_right = 433.0
+offset_bottom = 390.36
+texture = ExtResource("29_two4v")
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="MusicPlayer/Panel/ButtonPanel" unique_id=1675325479]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 78.0
+offset_right = 99.0
+offset_bottom = 122.0
+pivot_offset = Vector2(29, 17.73)
+texture = ExtResource("30_1rnnm")
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="MusicPlayer/Panel/ButtonPanel" unique_id=217278369]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 73.0
+offset_right = 172.0
+offset_bottom = 126.0
+pivot_offset = Vector2(35.5, 22.36)
+texture = ExtResource("31_7outr")
+expand_mode = 1
+
+[node name="3" type="TextureRect" parent="MusicPlayer/Panel/ButtonPanel" unique_id=1044684548]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 68.0
+offset_right = 258.0
+offset_bottom = 130.0
+pivot_offset = Vector2(42.5, 26)
+texture = ExtResource("32_ukvuy")
+expand_mode = 1
+
+[node name="4" type="TextureRect" parent="MusicPlayer/Panel/ButtonPanel" unique_id=1456389168]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 73.0
+offset_right = 330.0
+offset_bottom = 126.0
+pivot_offset = Vector2(35.5, 22.36)
+texture = ExtResource("33_usdkb")
+expand_mode = 1
+
+[node name="5" type="TextureRect" parent="MusicPlayer/Panel/ButtonPanel" unique_id=1432863632]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 78.0
+offset_right = 390.0
+offset_bottom = 122.0
+pivot_offset = Vector2(29, 17.73)
+texture = ExtResource("34_yi18o")
+expand_mode = 1
+
+[node name="INFObg" type="TextureRect" parent="MusicPlayer/Panel" unique_id=1006952434]
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 6.3599854
+offset_right = 433.0
+offset_bottom = 134.35999
+texture = ExtResource("28_r8g4m")
+expand_mode = 1
+
+[node name="Cover" type="TextureRect" parent="MusicPlayer/Panel/INFObg" unique_id=2098080030]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 148.0
+offset_bottom = 120.0
+texture = ExtResource("5_be5cm")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="MusicPlayer/Panel/INFObg/Cover" unique_id=1393677079]
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 112.0
+texture = ExtResource("29_am3to")
+expand_mode = 1
+
+[node name="SongInfo" type="VBoxContainer" parent="MusicPlayer/Panel/INFObg" unique_id=1199473917]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 25.0
+offset_right = 423.0
+offset_bottom = 119.0
+theme_override_constants/separation = -5
+
+[node name="TRACK" type="Label" parent="MusicPlayer/Panel/INFObg/SongInfo" unique_id=1824027553]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("30_two4v")
+text = "Track"
+autowrap_mode = 3
+
+[node name="ARTIST" type="Label" parent="MusicPlayer/Panel/INFObg/SongInfo" unique_id=2066626107]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("16_6cl0f")
+text = "Artist"
+autowrap_mode = 3
+
+[node name="DummyFILLER" type="Label" parent="MusicPlayer/Panel/INFObg/SongInfo" unique_id=1508391235]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 13
+
+[node name="ALBUM" type="Label" parent="MusicPlayer/Panel/INFObg/SongInfo" unique_id=143399951]
+custom_minimum_size = Vector2(0, 17)
+layout_mode = 2
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 13
+text = "Album"
+autowrap_mode = 3
+
+[node name="Foot" type="TextureRect" parent="MusicPlayer/Panel" unique_id=799775914]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 374.36
+offset_right = 433.0
+offset_bottom = 450.36
+texture = ExtResource("32_am3to")
+expand_mode = 1
+
+[node name="ProgressBar" type="TextureProgressBar" parent="MusicPlayer/Panel" unique_id=1028801912]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 143.35999
+offset_right = 421.0
+offset_bottom = 167.35999
+nine_patch_stretch = true
+texture_under = ExtResource("33_two4v")
+texture_progress = ExtResource("34_a8qkq")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MusicPlayer" unique_id=1993721315]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MusicPlayer" unique_id=1338618948]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="MusicPlayer" unique_id=249655370]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 204.0
+offset_top = -77.0
+offset_right = 506.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="MusicPlayer/ButtonIndicator" unique_id=418896403]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicPlayer/ButtonIndicator/Abtn" unique_id=345334484]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicPlayer/ButtonIndicator/Abtn" unique_id=798980507]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="MusicPlayer/ButtonIndicator" unique_id=1987406176]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicPlayer/ButtonIndicator/Bbtn" unique_id=1389681232]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicPlayer/ButtonIndicator/Bbtn" unique_id=184406031]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="MusicPlayer/ButtonIndicator" unique_id=2010809173]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicPlayer/ButtonIndicator/Xbtn" unique_id=1085490002]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicPlayer/ButtonIndicator/Xbtn" unique_id=1729087854]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="MusicList" type="Control" parent="." unique_id=466804696]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("41_frhhf")
+
+[node name="SubViewPort" type="SubViewport" parent="MusicList" unique_id=1891835059]
+transparent_bg = true
+size = Vector2i(888, 498)
+
+[node name="GridContainer" type="GridContainer" parent="MusicList/SubViewPort" unique_id=604812403]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -444.0
+offset_top = -498.0
+offset_right = 444.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 5
+
+[node name="Floor" type="TextureRect" parent="MusicList" unique_id=348844351]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="AlbumGrid" type="TextureRect" parent="MusicList" unique_id=844187534]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -113.0
+offset_top = -609.0
+offset_right = 775.0
+offset_bottom = -111.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("ViewportTexture_ttt3q")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="MusicList" unique_id=114182092]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -117.0
+offset_top = -609.0
+offset_right = 640.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("48_xce5j")
+
+[node name="PanelBG" type="TextureRect" parent="MusicList" unique_id=783161512]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -510.0
+offset_top = -580.0
+offset_right = -109.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("41_6uuvj")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="MusicList/PanelBG" unique_id=543739936]
+layout_mode = 0
+offset_top = -29.0
+offset_right = 401.0
+offset_bottom = 28.0
+texture = ExtResource("42_frhhf")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList/PanelBG/Header" unique_id=206537897]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 77.0
+offset_top = -17.5
+offset_right = 324.0
+offset_bottom = 10.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "COLLECTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Container" type="Panel" parent="MusicList/PanelBG" unique_id=2078286132]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 22.0
+offset_right = 397.0
+offset_bottom = 469.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicList/PanelBG/Container" unique_id=458682843]
+layout_mode = 0
+offset_right = 393.0
+offset_bottom = 517.0
+theme_override_constants/separation = 2
+
+[node name="1" type="Panel" parent="MusicList/PanelBG/Container/VBoxContainer" unique_id=1074541073]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+script = ExtResource("43_iwluo")
+
+[node name="TextureRect2" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/1" unique_id=1031928512]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("44_ns6xc")
+expand_mode = 1
+
+[node name="SELECTED" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/1" unique_id=91855504]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("45_dj8xe")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList/PanelBG/Container/VBoxContainer/1" unique_id=296596158]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 22.0
+offset_top = -14.0
+offset_right = 269.0
+offset_bottom = 14.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.91764706, 0.91764706, 0.91764706, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "Tracks"
+vertical_alignment = 1
+
+[node name="2" type="Panel" parent="MusicList/PanelBG/Container/VBoxContainer" unique_id=1927479439]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+script = ExtResource("43_iwluo")
+
+[node name="TextureRect2" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/2" unique_id=1143881867]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("44_ns6xc")
+expand_mode = 1
+
+[node name="SELECTED" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/2" unique_id=1507182162]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("45_dj8xe")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList/PanelBG/Container/VBoxContainer/2" unique_id=366989895]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 22.0
+offset_top = -14.0
+offset_right = 269.0
+offset_bottom = 14.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.91764706, 0.91764706, 0.91764706, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "Albums"
+vertical_alignment = 1
+
+[node name="3" type="Panel" parent="MusicList/PanelBG/Container/VBoxContainer" unique_id=994695565]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+script = ExtResource("43_iwluo")
+
+[node name="TextureRect2" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/3" unique_id=37823060]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("44_ns6xc")
+expand_mode = 1
+
+[node name="SELECTED" type="TextureRect" parent="MusicList/PanelBG/Container/VBoxContainer/3" unique_id=2121960352]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 397.0
+offset_bottom = 42.0
+texture = ExtResource("45_dj8xe")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList/PanelBG/Container/VBoxContainer/3" unique_id=1555566821]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 22.0
+offset_top = -14.0
+offset_right = 269.0
+offset_bottom = 14.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.91764706, 0.91764706, 0.91764706, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "Artists"
+vertical_alignment = 1
+
+[node name="BAR" type="TextureRect" parent="MusicList" unique_id=973132273]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="MusicList/BAR" unique_id=1585502039]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="MusicList/BAR" unique_id=946293134]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 400.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "My Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MusicList" unique_id=1288500430]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="MusicList" unique_id=740587489]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 204.0
+offset_top = -77.0
+offset_right = 506.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="MusicList/ButtonIndicator" unique_id=1406415249]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList/ButtonIndicator/Abtn" unique_id=4300941]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList/ButtonIndicator/Abtn" unique_id=668646993]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="MusicList/ButtonIndicator" unique_id=1563136054]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList/ButtonIndicator/Bbtn" unique_id=209670980]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList/ButtonIndicator/Bbtn" unique_id=34298000]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="MusicList/ButtonIndicator" unique_id=1099503578]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList/ButtonIndicator/Xbtn" unique_id=1146801549]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList/ButtonIndicator/Xbtn" unique_id=1685711435]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="MyApps" type="Control" parent="." unique_id=536147226]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("53_6xkda")
+
+[node name="Floor" type="TextureRect" parent="MyApps" unique_id=960199189]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -255.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="BAR" type="TextureRect" parent="MyApps" unique_id=1233810337]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="MyApps/BAR" unique_id=867315127]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="MyApps/BAR" unique_id=2088865079]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 400.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "My Apps"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MyApps" unique_id=82539116]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MyApps" unique_id=409910077]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -447.0
+offset_top = -369.0
+offset_right = 718.0
+offset_bottom = -169.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 24
+
+[node name="-1" type="Panel" parent="MyApps/HBoxContainer" unique_id=396366119]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MyApps/HBoxContainer/-1" unique_id=721168411]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("50_6xkda")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="MyApps/HBoxContainer/-1" unique_id=548837464]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_y1ltf")
+expand_mode = 1
+
+[node name="0" type="Panel" parent="MyApps/HBoxContainer" unique_id=1019675649]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MyApps/HBoxContainer/0" unique_id=1332848625]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("56_y1ltf")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="MyApps/HBoxContainer/0" unique_id=411045218]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_right = 4.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("51_y1ltf")
+expand_mode = 1
+
+[node name="Selection" type="TextureRect" parent="MyApps" unique_id=827751168]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -459.0
+offset_top = -377.0
+offset_right = -235.0
+offset_bottom = -153.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("52_ttt3q")
+expand_mode = 1
+
+[node name="Logo" type="TextureRect" parent="MyApps" unique_id=644782046]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -394.0
+offset_top = 155.0
+offset_right = -239.0
+offset_bottom = 217.0
+grow_horizontal = 0
+texture = ExtResource("53_lqnmw")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="MyApps" unique_id=1301398788]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 191.0
+offset_top = -89.0
+offset_right = 493.0
+offset_bottom = -56.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="MyApps/ButtonIndicator" unique_id=1047904579]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyApps/ButtonIndicator/Abtn" unique_id=450246698]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyApps/ButtonIndicator/Abtn" unique_id=861692723]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Start"
+
+[node name="Bbtn" type="HBoxContainer" parent="MyApps/ButtonIndicator" unique_id=1370263059]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyApps/ButtonIndicator/Bbtn" unique_id=69823517]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyApps/ButtonIndicator/Bbtn" unique_id=1981470459]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="MyApps/ButtonIndicator" unique_id=1156362833]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyApps/ButtonIndicator/Xbtn" unique_id=636924542]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyApps/ButtonIndicator/Xbtn" unique_id=1224692257]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="MusicList-TRACK" type="Control" parent="." unique_id=161303468]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("47_iwluo")
+
+[node name="Floor" type="TextureRect" parent="MusicList-TRACK" unique_id=2112350250]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="PanelBG" type="TextureRect" parent="MusicList-TRACK" unique_id=783606812]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -510.0
+offset_top = -580.0
+offset_right = 268.53003
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("41_6uuvj")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="MusicList-TRACK/PanelBG" unique_id=1871075280]
+layout_mode = 0
+offset_top = -29.0
+offset_right = 778.53
+offset_bottom = 28.0
+texture = ExtResource("42_frhhf")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList-TRACK/PanelBG/Header" unique_id=1733053452]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 11.0
+offset_top = -17.5
+offset_right = 770.0
+offset_bottom = 10.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "MUSIC PLAYER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header2" type="TextureRect" parent="MusicList-TRACK/PanelBG" unique_id=1263871447]
+layout_mode = 0
+offset_top = -29.0
+offset_right = 778.53
+offset_bottom = 28.0
+texture = ExtResource("42_frhhf")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MusicList-TRACK/PanelBG/Header2" unique_id=22396651]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 11.0
+offset_top = -17.5
+offset_right = 770.0
+offset_bottom = 10.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "TRACKS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Container" type="Panel" parent="MusicList-TRACK/PanelBG" unique_id=1758893406]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 22.0
+offset_right = 782.53
+offset_bottom = 469.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MusicList-TRACK/PanelBG/Container" unique_id=819272361]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 766.0
+offset_bottom = 517.0
+theme_override_constants/separation = 2
+
+[node name="BAR" type="TextureRect" parent="MusicList-TRACK" unique_id=654265607]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="MusicList-TRACK/BAR" unique_id=1087157307]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="MusicList-TRACK/BAR" unique_id=1679441401]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 400.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "My Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MusicList-TRACK" unique_id=724696934]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="Cover" type="TextureRect" parent="MusicList-TRACK" unique_id=1140498256]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 339.0
+offset_top = -317.0
+offset_right = 547.0
+offset_bottom = -108.99957
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="MusicList-TRACK/Cover" unique_id=647753616]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -112.0
+offset_top = -208.0
+offset_right = 112.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("48_iwluo")
+expand_mode = 1
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="MusicList-TRACK" unique_id=335732989]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 204.0
+offset_top = -77.0
+offset_right = 506.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="MusicList-TRACK/ButtonIndicator" unique_id=307904678]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList-TRACK/ButtonIndicator/Abtn" unique_id=1774121718]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList-TRACK/ButtonIndicator/Abtn" unique_id=1518811521]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="MusicList-TRACK/ButtonIndicator" unique_id=402252586]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList-TRACK/ButtonIndicator/Bbtn" unique_id=1320031218]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList-TRACK/ButtonIndicator/Bbtn" unique_id=164744289]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="MusicList-TRACK/ButtonIndicator" unique_id=1072339439]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MusicList-TRACK/ButtonIndicator/Xbtn" unique_id=639939641]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MusicList-TRACK/ButtonIndicator/Xbtn" unique_id=230236869]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="SystemSettings" type="Control" parent="." unique_id=1694813540]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("63_b15yc")
+
+[node name="Floor" type="TextureRect" parent="SystemSettings" unique_id=1819895514]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="Panel2" type="TextureRect" parent="SystemSettings" unique_id=1783090550]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -607.0
+offset_right = 395.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("63_rpxjp")
+expand_mode = 1
+
+[node name="Description" type="Label" parent="SystemSettings/Panel2" unique_id=347671278]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 23.0
+offset_right = 352.0
+offset_bottom = 488.0
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("30_two4v")
+theme_override_font_sizes/font_size = 25
+text = "Change your Vite console settings, including display, audio, language, and remote control."
+autowrap_mode = 3
+
+[node name="PanelBG" type="TextureRect" parent="SystemSettings" unique_id=1185785540]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -403.0
+offset_top = -607.0
+offset_right = 34.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("64_mlj0i")
+expand_mode = 1
+
+[node name="Container" type="Panel" parent="SystemSettings/PanelBG" unique_id=855652508]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_right = 433.0
+offset_bottom = 499.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SystemSettings/PanelBG/Container" unique_id=781515766]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 2
+
+[node name="1" type="Panel" parent="SystemSettings/PanelBG/Container/VBoxContainer" unique_id=879682935]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(428, 41)
+layout_mode = 2
+script = ExtResource("66_qglq6")
+
+[node name="Norm" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/1" unique_id=1495331670]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("66_mlj0i")
+
+[node name="SELECTED" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/1" unique_id=492886984]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("67_qglq6")
+
+[node name="Icon" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/1" unique_id=1407156713]
+modulate = Color(0.13725491, 0.13725491, 0.13725491, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -13.5
+offset_right = -171.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_lqnmw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="SystemSettings/PanelBG/Container/VBoxContainer/1" unique_id=722969387]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 7.0
+offset_right = 344.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Console Settings"
+
+[node name="2" type="Panel" parent="SystemSettings/PanelBG/Container/VBoxContainer" unique_id=1307293140]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(428, 41)
+layout_mode = 2
+script = ExtResource("66_qglq6")
+
+[node name="Norm" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/2" unique_id=1027078531]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("66_mlj0i")
+
+[node name="SELECTED" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/2" unique_id=100927389]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("67_qglq6")
+
+[node name="Icon" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/2" unique_id=1118096047]
+modulate = Color(0.13725491, 0.13725491, 0.13725491, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -13.5
+offset_right = -171.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("68_4bhfc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="SystemSettings/PanelBG/Container/VBoxContainer/2" unique_id=1129551649]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 7.0
+offset_right = 344.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Storage"
+
+[node name="3" type="Panel" parent="SystemSettings/PanelBG/Container/VBoxContainer" unique_id=1139858039]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(428, 41)
+layout_mode = 2
+script = ExtResource("66_qglq6")
+
+[node name="Norm" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/3" unique_id=1121302158]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("66_mlj0i")
+
+[node name="SELECTED" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/3" unique_id=376805691]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("67_qglq6")
+
+[node name="Icon" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/3" unique_id=206377627]
+modulate = Color(0.13725491, 0.13725491, 0.13725491, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -13.5
+offset_right = -171.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("69_b15yc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="SystemSettings/PanelBG/Container/VBoxContainer/3" unique_id=1556648709]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 7.0
+offset_right = 344.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Network Settings"
+
+[node name="4" type="Panel" parent="SystemSettings/PanelBG/Container/VBoxContainer" unique_id=1405783288]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(428, 41)
+layout_mode = 2
+script = ExtResource("66_qglq6")
+
+[node name="Norm" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/4" unique_id=567203321]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("66_mlj0i")
+
+[node name="SELECTED" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/4" unique_id=15233913]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("67_qglq6")
+
+[node name="Icon" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/4" unique_id=2065125338]
+modulate = Color(0.13725491, 0.13725491, 0.13725491, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -13.5
+offset_right = -171.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("70_ecmyi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="SystemSettings/PanelBG/Container/VBoxContainer/4" unique_id=676666076]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 7.0
+offset_right = 344.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Media"
+
+[node name="5" type="Panel" parent="SystemSettings/PanelBG/Container/VBoxContainer" unique_id=1856471883]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(428, 41)
+layout_mode = 2
+script = ExtResource("66_qglq6")
+
+[node name="Norm" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/5" unique_id=1952392042]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("66_mlj0i")
+
+[node name="SELECTED" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/5" unique_id=911489219]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 49.0
+texture = ExtResource("67_qglq6")
+
+[node name="Icon" type="TextureRect" parent="SystemSettings/PanelBG/Container/VBoxContainer/5" unique_id=2038827732]
+modulate = Color(0.13725491, 0.13725491, 0.13725491, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.5
+offset_top = -13.5
+offset_right = -171.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("71_2kw3j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="SystemSettings/PanelBG/Container/VBoxContainer/5" unique_id=853411810]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 7.0
+offset_right = 344.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.13725491, 0.13725491, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Profile Options"
+
+[node name="Panel3" type="TextureRect" parent="SystemSettings/PanelBG" unique_id=943417578]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 423.0
+offset_right = 433.0
+offset_bottom = 499.0
+texture = ExtResource("65_qglq6")
+expand_mode = 1
+
+[node name="Counter" type="Label" parent="SystemSettings/PanelBG/Panel3" unique_id=1409726575]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 28.0
+offset_right = 347.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.42352942, 0.42352942, 0.42352942, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "1 of 5"
+autowrap_mode = 3
+
+[node name="BAR" type="TextureRect" parent="SystemSettings" unique_id=1002810868]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="SystemSettings/BAR" unique_id=1541648925]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="SystemSettings/BAR" unique_id=621808658]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 571.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "System Settings"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SystemSettings" unique_id=1003520837]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="SystemSettings" unique_id=1599832955]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = -77.0
+offset_right = 428.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="SystemSettings/ButtonIndicator" unique_id=1531966350]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="SystemSettings/ButtonIndicator/Abtn" unique_id=1301050927]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="SystemSettings/ButtonIndicator/Abtn" unique_id=1869451816]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="SystemSettings/ButtonIndicator" unique_id=433026657]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="SystemSettings/ButtonIndicator/Bbtn" unique_id=1724867227]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="SystemSettings/ButtonIndicator/Bbtn" unique_id=1637124211]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="SystemSettings/ButtonIndicator" unique_id=1843383768]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="SystemSettings/ButtonIndicator/Xbtn" unique_id=216009485]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="SystemSettings/ButtonIndicator/Xbtn" unique_id=1790181370]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="MyGames" type="Control" parent="." unique_id=544221085]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("75_mmawy")
+
+[node name="Floor" type="TextureRect" parent="MyGames" unique_id=846397176]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="BAR" type="TextureRect" parent="MyGames" unique_id=2144682308]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="MyGames/BAR" unique_id=1961321092]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="Header" type="Label" parent="MyGames/BAR" unique_id=1974706208]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 153.0
+offset_top = -10.5
+offset_right = 571.0
+offset_bottom = 17.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 23
+text = "My Games"
+
+[node name="PanelBG" type="TextureRect" parent="MyGames" unique_id=10158591]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -527.0
+offset_top = -564.0
+offset_right = -90.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("75_jujsw")
+expand_mode = 1
+
+[node name="Container" type="Panel" parent="MyGames/PanelBG" unique_id=862243971]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_right = 433.0
+offset_bottom = 373.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MyGames/PanelBG/Container" unique_id=1969987587]
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 377.0
+theme_override_constants/separation = 2
+
+[node name="Header" type="TextureRect" parent="MyGames/PanelBG" unique_id=1038549231]
+layout_mode = 0
+offset_top = -49.0
+offset_right = 437.0
+offset_bottom = 8.0
+texture = ExtResource("76_mmawy")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="MyGames/PanelBG/Header" unique_id=1868432322]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -20.5
+offset_right = 458.0
+offset_bottom = 7.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Recently Played"
+
+[node name="Sub" type="Label" parent="MyGames/PanelBG/Header" unique_id=1740879368]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = -12.5
+offset_right = 403.0
+offset_bottom = 0.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("30_two4v")
+theme_override_font_sizes/font_size = 10
+text = "0 Games Installed"
+horizontal_alignment = 2
+
+[node name="Footer" type="TextureRect" parent="MyGames/PanelBG" unique_id=1760774665]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 373.0
+offset_right = 433.0
+offset_bottom = 449.0
+texture = ExtResource("65_qglq6")
+expand_mode = 1
+
+[node name="Counter" type="Label" parent="MyGames/PanelBG/Footer" unique_id=841836301]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 28.0
+offset_right = 347.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.42352942, 0.42352942, 0.42352942, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "1 of 8"
+autowrap_mode = 3
+
+[node name="Collections" type="TextureRect" parent="MyGames" unique_id=2100714215]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -83.0
+offset_top = -614.0
+offset_right = 241.0
+offset_bottom = -107.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("77_316tg")
+
+[node name="Header" type="TextureRect" parent="MyGames/Collections" unique_id=1486191553]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 324.0
+offset_bottom = 56.0
+texture = ExtResource("78_g6fhy")
+
+[node name="Header" type="Label" parent="MyGames/Collections/Header" unique_id=1499067595]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -123.0
+offset_top = -17.5
+offset_right = 124.0
+offset_bottom = 10.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.41568628, 0.41568628, 0.41568628, 1)
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 15
+text = "COLLECTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MyGames" unique_id=1504547081]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="MyGames" unique_id=1305250465]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = -77.0
+offset_right = 428.0
+offset_bottom = -44.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="MyGames/ButtonIndicator" unique_id=16801731]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyGames/ButtonIndicator/Abtn" unique_id=394491681]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyGames/ButtonIndicator/Abtn" unique_id=1187336598]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="MyGames/ButtonIndicator" unique_id=1370412473]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyGames/ButtonIndicator/Bbtn" unique_id=1351990385]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyGames/ButtonIndicator/Bbtn" unique_id=416335358]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="MyGames/ButtonIndicator" unique_id=1985405066]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="MyGames/ButtonIndicator/Xbtn" unique_id=1086501957]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MyGames/ButtonIndicator/Xbtn" unique_id=689004264]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetInsider" to="HomeDash" method="_on_insider_request_completed"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetInsider/Insider-GetAdImage" to="HomeDash" method="insider_get_ad_image_rc"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetSpotlight" to="HomeDash" method="_on_spotlight_request_completed"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetSpotlight/Spotlight-GetAdImage" to="HomeDash" method="spotlight_get_ad_image_rc"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetEvents" to="HomeDash" method="_on_event_request_completed"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetEvents/Events-GetAdImage" to="HomeDash" method="event_get_ad_image_rc"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetMedia" to="HomeDash" method="_on_media_request_completed"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/GetMedia/Media-GetAdImage" to="HomeDash" method="media_get_ad_image_rc"]
+[connection signal="request_completed" from="HomeDash/NetworkRequests/NetworkTest" to="HomeDash" method="_on_network_test_request_completed"]
+[connection signal="finished" from="MusicPlayer/AudioStreamPlayer" to="MusicPlayer" method="_on_audio_stream_player_finished"]

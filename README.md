@@ -16,3 +16,7 @@ what needs to be finished:
   - system settings
   - dashboard channel cards
   - marketplace
+  
+stuff ive used in this project that were made by other people:
+  - [godot_cef](https://godotcef.org/)
+  - [Greenpixels OnScreen Keyboard for Godot](https://github.com/greenpixels/greenpixels-onscreen-keyboard)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dhxjoamq5vplo"]
+
+[ext_resource type="Texture2D" uid="uid://c1q6t40kxixx0" path="res://Assets/waffle.jpg" id="1_gvw0y"]
+[ext_resource type="Texture2D" uid="uid://8sjwbydhw8sv" path="res://Assets/MyGames/card_cover-overlay.png" id="2_2uufd"]
+
+[node name="COVER" type="Panel" unique_id=2072746989]
+custom_minimum_size = Vector2(113, 139)
+
+[node name="Cover" type="TextureRect" parent="." unique_id=1286565698]
+custom_minimum_size = Vector2(113, 113)
+layout_mode = 0
+offset_top = 26.0
+offset_right = 113.0
+offset_bottom = 139.0
+texture = ExtResource("1_gvw0y")
+expand_mode = 1
+
+[node name="Overlay" type="TextureRect" parent="Cover" unique_id=218163908]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 117.0
+offset_bottom = 121.0
+texture = ExtResource("2_2uufd")
+expand_mode = 1

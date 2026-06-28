@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bf6cl1rwugef6"]
+
+[ext_resource type="Texture2D" uid="uid://c1q6t40kxixx0" path="res://Assets/waffle.jpg" id="1_sffue"]
+
+[node name="Cover" type="TextureRect" unique_id=1758737417]
+custom_minimum_size = Vector2(166, 166)
+texture = ExtResource("1_sffue")
+expand_mode = 1

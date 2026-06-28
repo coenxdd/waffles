@@ -1,0 +1,874 @@
+[gd_scene format=3 uid="uid://bt0iwvnblvssu"]
+
+[ext_resource type="Script" uid="uid://daej56n1gvhij" path="res://Addons/greenpixels-onscreen-keyboard-main/text_edit_with_on_screen_keyboard.gd" id="1_f00dj"]
+[ext_resource type="Texture2D" uid="uid://rgiaimng4kd5" path="res://Addons/greenpixels-onscreen-keyboard-main/keyboard-icon.png" id="2_q8r3g"]
+[ext_resource type="Theme" uid="uid://cqcn42yrdol7d" path="res://Addons/greenpixels-onscreen-keyboard-main/keyboard-button-theme.tres" id="2_tj4mm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ttm8u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t7ana"]
+
+[node name="TextEditWithOnScreenKeyboard" type="PanelContainer" unique_id=2091994506]
+offset_left = 163.0
+offset_top = 94.0
+offset_right = 583.0
+offset_bottom = 137.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+script = ExtResource("1_f00dj")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=612813319]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=758001851]
+layout_mode = 2
+
+[node name="TextInputContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1562172153]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TextEdit" type="TextEdit" parent="MarginContainer/VBoxContainer/TextInputContainer" unique_id=1195309857]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme = ExtResource("2_tj4mm")
+placeholder_text = "Input text ..."
+scroll_fit_content_height = true
+
+[node name="KeyboardButton" type="Button" parent="MarginContainer/VBoxContainer/TextInputContainer" unique_id=312712753]
+visible = false
+clip_contents = true
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/TextInputContainer/KeyboardButton" unique_id=1013232628]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="KeyboardTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/TextInputContainer/KeyboardButton/MarginContainer" unique_id=731813472]
+custom_minimum_size = Vector2(32, 1)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_q8r3g")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Controls" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1589826233]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="NumberKeys" type="GridContainer" parent="MarginContainer/VBoxContainer/Controls" unique_id=1226265349]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 10
+
+[node name="1" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=2110240469]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "1"
+
+[node name="2" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1110622278]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "2"
+
+[node name="3" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=321773678]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "3"
+
+[node name="4" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1467409202]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "4"
+
+[node name="5" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=6881429]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "5"
+
+[node name="6" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1528960780]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "6"
+
+[node name="7" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1299322592]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "7"
+
+[node name="8" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=19920831]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "8"
+
+[node name="9" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1806525331]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "9"
+
+[node name="10" type="Button" parent="MarginContainer/VBoxContainer/Controls/NumberKeys" unique_id=1441345176]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "0"
+
+[node name="Keyboards" type="TabContainer" parent="MarginContainer/VBoxContainer/Controls" unique_id=728071145]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ttm8u")
+current_tab = 0
+clip_tabs = false
+tabs_visible = false
+
+[node name="Qwerty" type="TabContainer" parent="MarginContainer/VBoxContainer/Controls/Keyboards" unique_id=1681556352]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t7ana")
+current_tab = 1
+clip_tabs = false
+tabs_visible = false
+metadata/_tab_index = 0
+
+[node name="LettersBig" type="GridContainer" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty" unique_id=363578851]
+visible = false
+layout_mode = 2
+columns = 10
+metadata/_tab_index = 0
+
+[node name="Q" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1241498499]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "Q"
+
+[node name="W" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1663495558]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "W"
+
+[node name="E" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=764541231]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "E"
+
+[node name="R" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=88700212]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "R"
+
+[node name="T" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1110788089]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "T"
+
+[node name="Y" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=244465519]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "Y"
+
+[node name="U" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=159702022]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "U"
+
+[node name="I" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1087589664]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "I"
+
+[node name="O" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=25770709]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "O"
+
+[node name="P" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1797931356]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "P"
+
+[node name="A" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=616255392]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "A"
+
+[node name="S" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=83079220]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "S"
+
+[node name="D" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1015572705]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "D"
+
+[node name="F" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=2021745480]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "F"
+
+[node name="G" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=296510567]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "G"
+
+[node name="H" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=425340702]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "H"
+
+[node name="J" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=942424358]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "J"
+
+[node name="K" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=774695296]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "K"
+
+[node name="L" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1551778753]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "L"
+
+[node name="Gravis" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1013820177]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "´"
+
+[node name="Z" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=521814435]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "Z"
+
+[node name="X" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=426009702]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "X"
+
+[node name="C" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1518425234]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "C"
+
+[node name="V" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1310275868]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "V"
+
+[node name="B" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=496031276]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "B"
+
+[node name="N" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=1036532416]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "N"
+
+[node name="M" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=197519431]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "M"
+
+[node name="Dot" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=349814170]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "."
+
+[node name="Comma" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=761706595]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = ","
+
+[node name="Questionmark" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersBig" unique_id=42604223]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "?"
+
+[node name="LettersSmall" type="GridContainer" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty" unique_id=147772148]
+layout_mode = 2
+columns = 10
+metadata/_tab_index = 1
+
+[node name="Q" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1196546208]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "q"
+
+[node name="W" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1040445747]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "w"
+
+[node name="E" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1627600914]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "e"
+
+[node name="R" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1598134100]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "r"
+
+[node name="T" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1632881210]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "t"
+
+[node name="Y" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1362963689]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "y"
+
+[node name="U" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=519820870]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "u"
+
+[node name="I" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=248890151]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "i"
+
+[node name="O" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1791292271]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "o"
+
+[node name="P" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1998256608]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "p"
+
+[node name="A" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=426066797]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "a"
+
+[node name="S" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1452254761]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "s"
+
+[node name="D" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=613601770]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "d"
+
+[node name="F" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=226816668]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "f"
+
+[node name="G" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=2068682105]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "g"
+
+[node name="H" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=346974522]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "h"
+
+[node name="J" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1879901667]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "j"
+
+[node name="K" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1391467506]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "k"
+
+[node name="L" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1385446662]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "l"
+
+[node name="GraveAccent" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=443606740]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "´"
+
+[node name="Z" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1001005574]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "z"
+
+[node name="X" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=669823696]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "x"
+
+[node name="C" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=604960787]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "c"
+
+[node name="V" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=935325458]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "v"
+
+[node name="B" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=418995710]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "b"
+
+[node name="N" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=121554673]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "n"
+
+[node name="M" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=381949456]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "m"
+
+[node name="Dot" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=2068058789]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "."
+
+[node name="Comma" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1177746383]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = ","
+
+[node name="Questionmark" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/LettersSmall" unique_id=1371147418]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "?"
+
+[node name="Symbols" type="GridContainer" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty" unique_id=486968616]
+visible = false
+layout_mode = 2
+columns = 10
+metadata/_tab_index = 2
+
+[node name="ExclamationMark" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1454563984]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "!"
+
+[node name="AtSign" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=108651672]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "@"
+
+[node name="Hashtag" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=149248224]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "#"
+
+[node name="Dollar" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=2074550619]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "$"
+
+[node name="Percent" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=286576033]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "%"
+
+[node name="Circumflex" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=2114412587]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "^"
+
+[node name="Ampersand" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=202784633]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "&"
+
+[node name="Asterisk" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=2047241866]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "*"
+
+[node name="RoundBracketOpen" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=186067630]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "("
+
+[node name="RoundBracketClose" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1694854858]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "P"
+
+[node name="Minus" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=2069156593]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "-"
+
+[node name="Underline" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1106118552]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "_"
+
+[node name="Plus" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1573669075]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "+"
+
+[node name="Equal" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=2074365308]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "="
+
+[node name="ForwardSlash" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=18903706]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "/"
+
+[node name="BackSlash" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1351534417]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "\\"
+
+[node name="CurlyBracketOpen" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1605477336]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "{"
+
+[node name="CurlyBracketClose" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=585002746]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "}"
+
+[node name="SquareBracketOpen" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=972079141]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "["
+
+[node name="SquareBracketClose" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=261723652]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "]"
+
+[node name="LowerThan" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=527106501]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "<"
+
+[node name="GreaterThan" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1388086293]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = ">"
+
+[node name="Semicolon" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1678856142]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = ";"
+
+[node name="Colon" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1979439053]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = ":"
+
+[node name="QuotationMark" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1598793221]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "\""
+
+[node name="AcuteAccent" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=537438357]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "`"
+
+[node name="VerticalBar" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=482520371]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "|"
+
+[node name="Tilde" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1328064826]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "~"
+
+[node name="Pound" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1511105773]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "£"
+
+[node name="Yen" type="Button" parent="MarginContainer/VBoxContainer/Controls/Keyboards/Qwerty/Symbols" unique_id=1773284194]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("2_tj4mm")
+text = "¥"
+
+[node name="ManipulationButtons" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Controls" unique_id=1895692366]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ShiftButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/ManipulationButtons" unique_id=820381222]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_tj4mm")
+text = "Shift"
+
+[node name="SymbolsButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/ManipulationButtons" unique_id=613566500]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_tj4mm")
+text = "Symbols"
+
+[node name="SpaceButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/ManipulationButtons" unique_id=2145985730]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_tj4mm")
+text = "Space"
+
+[node name="BackspaceButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/ManipulationButtons" unique_id=577367662]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_tj4mm")
+text = "Delete"
+
+[node name="MetaButtons" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Controls" unique_id=1717609480]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CancelButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/MetaButtons" unique_id=2090327470]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_tj4mm")
+text = "Cancel"
+
+[node name="FillSpace" type="Control" parent="MarginContainer/VBoxContainer/Controls/MetaButtons" unique_id=1222983673]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubmitButton" type="Button" parent="MarginContainer/VBoxContainer/Controls/MetaButtons" unique_id=83694265]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_tj4mm")
+text = "Submit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TextInputContainer/KeyboardButton" to="." method="_on_keyboard_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/ManipulationButtons/ShiftButton" to="." method="_on_shift_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/ManipulationButtons/SymbolsButton" to="." method="_on_symbols_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/ManipulationButtons/SpaceButton" to="." method="_on_space_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/ManipulationButtons/BackspaceButton" to="." method="_on_backspace_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/MetaButtons/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Controls/MetaButtons/SubmitButton" to="." method="_on_submit_button_pressed"]
