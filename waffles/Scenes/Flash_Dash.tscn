@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bsddjdjruupfx" path="res://Assets/HomeMenu/backgrounds/aura_background.jpg" id="2_6xkda"]
 [ext_resource type="Texture2D" uid="uid://dsj8tsbtsasnk" path="res://Assets/HomeMenu/CardSelection.png" id="2_mhvbo"]
 [ext_resource type="Texture2D" uid="uid://w5pkm0gnug3f" path="res://Assets/HomeMenu/me.jpg" id="2_pypfv"]
-[ext_resource type="Texture2D" uid="uid://jowtukemq0tp" path="res://Assets/HOME_conceptrender.png" id="3_mmawy"]
+[ext_resource type="Texture2D" uid="uid://ddlbpeuyic6jv" path="res://Assets/GameDetails/CONCEPT-RENDER1.png" id="3_prrqg"]
 [ext_resource type="Texture2D" uid="uid://dslrukwb0h6uf" path="res://Assets/HomeMenu/BottomFloor.png" id="3_wpc83"]
 [ext_resource type="Script" uid="uid://dhipbdu33ly1v" path="res://Scripts/home_dash.gd" id="4_xce5j"]
 [ext_resource type="Texture2D" uid="uid://c1q6t40kxixx0" path="res://Assets/waffle.jpg" id="5_be5cm"]
@@ -79,6 +79,11 @@
 [ext_resource type="Texture2D" uid="uid://dt8tyhhgmr33s" path="res://Assets/MyGames/Header.png" id="76_mmawy"]
 [ext_resource type="Texture2D" uid="uid://ckfop2ui35wps" path="res://Assets/MyGames/CollectionsPanel.png" id="77_316tg"]
 [ext_resource type="Texture2D" uid="uid://cehgqd72of5x8" path="res://Assets/MyGames/CollectionsHeader.png" id="78_g6fhy"]
+[ext_resource type="Script" uid="uid://evlqymn5qxj7" path="res://Scripts/MyGames/game_details.gd" id="80_7avdn"]
+[ext_resource type="Texture2D" uid="uid://bbl18yeocr8f4" path="res://Assets/GameDetails/panel.png" id="80_prrqg"]
+[ext_resource type="Script" uid="uid://b15xdv54v204y" path="res://Scripts/MyGames/button_gamedetails.gd" id="81_7avdn"]
+[ext_resource type="Texture2D" uid="uid://6qru5vc4o2a4" path="res://Assets/GameDetails/btn-select.png" id="81_qsni6"]
+[ext_resource type="Texture2D" uid="uid://bqtyuqxm3muwa" path="res://Assets/GameDetails/btn-reg.png" id="82_7avdn"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_y1ltf"]
 viewport_path = NodePath("MusicList/SubViewPort")
@@ -279,7 +284,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_mmawy")
+texture = ExtResource("3_prrqg")
 expand_mode = 1
 
 [node name="HomeDash" type="Control" parent="." unique_id=1442244188]
@@ -3954,20 +3959,6 @@ grow_vertical = 0
 texture = ExtResource("75_jujsw")
 expand_mode = 1
 
-[node name="Container" type="Panel" parent="MyGames/PanelBG" unique_id=862243971]
-self_modulate = Color(1, 1, 1, 0)
-clip_contents = true
-layout_mode = 0
-offset_left = 4.0
-offset_right = 433.0
-offset_bottom = 373.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MyGames/PanelBG/Container" unique_id=1969987587]
-layout_mode = 0
-offset_right = 429.0
-offset_bottom = 377.0
-theme_override_constants/separation = 2
-
 [node name="Header" type="TextureRect" parent="MyGames/PanelBG" unique_id=1038549231]
 layout_mode = 0
 offset_top = -49.0
@@ -4004,6 +3995,20 @@ theme_override_fonts/font = ExtResource("30_two4v")
 theme_override_font_sizes/font_size = 10
 text = "0 Games Installed"
 horizontal_alignment = 2
+
+[node name="Container" type="Panel" parent="MyGames/PanelBG" unique_id=862243971]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_right = 433.0
+offset_bottom = 373.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MyGames/PanelBG/Container" unique_id=1969987587]
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 377.0
+theme_override_constants/separation = 2
 
 [node name="Footer" type="TextureRect" parent="MyGames/PanelBG" unique_id=1760774665]
 layout_mode = 0
@@ -4135,6 +4140,441 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("9_eehda")
 theme_override_font_sizes/font_size = 20
 text = "Details"
+
+[node name="GameDetails" type="Control" parent="." unique_id=633305456]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(640, 360)
+script = ExtResource("80_7avdn")
+
+[node name="Background" type="TextureRect" parent="GameDetails" unique_id=2051552684]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Floor" type="TextureRect" parent="GameDetails" unique_id=196048843]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_wpc83")
+expand_mode = 1
+
+[node name="BAR" type="TextureRect" parent="GameDetails" unique_id=108670879]
+self_modulate = Color(1, 1, 1, 0.54901963)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 42.0
+offset_bottom = 99.0
+grow_horizontal = 2
+texture = ExtResource("25_p1upm")
+expand_mode = 1
+
+[node name="Time" type="Label" parent="GameDetails/BAR" unique_id=334720700]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -9.5
+offset_right = -128.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("15_pypfv")
+theme_override_font_sizes/font_size = 20
+text = "6:11 PM"
+horizontal_alignment = 2
+script = ExtResource("16_ahvde")
+
+[node name="PanelBG" type="TextureRect" parent="GameDetails" unique_id=62123993]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -527.0
+offset_top = -565.0
+offset_right = -90.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("80_prrqg")
+expand_mode = 1
+
+[node name="Header" type="TextureRect" parent="GameDetails/PanelBG" unique_id=1425188785]
+layout_mode = 0
+offset_top = -49.0
+offset_right = 437.0
+offset_bottom = 8.0
+texture = ExtResource("76_mmawy")
+expand_mode = 1
+
+[node name="Header" type="Label" parent="GameDetails/PanelBG/Header" unique_id=1158746189]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -18.5
+offset_right = 458.0
+offset_bottom = 9.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Title"
+
+[node name="Sub" type="Label" parent="GameDetails/PanelBG/Header" unique_id=889262170]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = -10.5
+offset_right = 403.0
+offset_bottom = 2.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("30_two4v")
+theme_override_font_sizes/font_size = 10
+text = "10 hours played"
+horizontal_alignment = 2
+
+[node name="Container" type="Panel" parent="GameDetails/PanelBG" unique_id=2020641782]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 433.0
+offset_bottom = 449.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameDetails/PanelBG/Container" unique_id=408176294]
+layout_mode = 0
+offset_right = 429.0
+offset_bottom = 324.0
+theme_override_constants/separation = 3
+
+[node name="1" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=15896100]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+script = ExtResource("81_7avdn")
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/1" unique_id=329695288]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("81_qsni6")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/1" unique_id=825328912]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("82_7avdn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/1" unique_id=1010731154]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 415.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "Play"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="2" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=1895342773]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+script = ExtResource("81_7avdn")
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/2" unique_id=1898111010]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("81_qsni6")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/2" unique_id=1103178712]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("82_7avdn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/2" unique_id=1056650661]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 415.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "View Achievements"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="3" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=703442659]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+script = ExtResource("81_7avdn")
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/3" unique_id=37363771]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("81_qsni6")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/3" unique_id=2088905897]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("82_7avdn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/3" unique_id=1412419346]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 415.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "View My Media"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="4" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=1170100844]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+script = ExtResource("81_7avdn")
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/4" unique_id=639835701]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("81_qsni6")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/4" unique_id=25239133]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("82_7avdn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/4" unique_id=416839121]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 415.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "Downloads"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="5" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=1619305905]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+script = ExtResource("81_7avdn")
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/5" unique_id=2013913780]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("81_qsni6")
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/5" unique_id=1930856622]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+texture = ExtResource("82_7avdn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/5" unique_id=181605190]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 8.0
+offset_right = 415.0
+offset_bottom = 31.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "Community"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="6" type="Panel" parent="GameDetails/PanelBG/Container/VBoxContainer" unique_id=1036690225]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(429, 38.67)
+layout_mode = 2
+
+[node name="SELECTED" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/6" unique_id=740094539]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+expand_mode = 1
+
+[node name="NORM" type="TextureRect" parent="GameDetails/PanelBG/Container/VBoxContainer/6" unique_id=2037033301]
+visible = false
+layout_mode = 0
+offset_left = -4.0
+offset_right = 433.0
+offset_bottom = 47.0
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/6" unique_id=1798177132]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 14.0
+offset_right = 415.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 17
+text = "About this Game:"
+clip_text = true
+text_overrun_behavior = 6
+
+[node name="Desc" type="Label" parent="GameDetails/PanelBG/Container/VBoxContainer/6" unique_id=721005223]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 41.0
+offset_right = 415.0
+offset_bottom = 200.0
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("30_two4v")
+theme_override_font_sizes/font_size = 15
+text = "Description"
+autowrap_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GameDetails" unique_id=1541688685]
+libraries/ = SubResource("AnimationLibrary_6uuvj")
+
+[node name="ButtonIndicator" type="HBoxContainer" parent="GameDetails" unique_id=2106135158]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 133.0
+offset_top = -84.0
+offset_right = 435.0
+offset_bottom = -51.0
+grow_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Abtn" type="HBoxContainer" parent="GameDetails/ButtonIndicator" unique_id=1590944844]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="GameDetails/ButtonIndicator/Abtn" unique_id=1382882682]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("54_3tniv")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/ButtonIndicator/Abtn" unique_id=301614312]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Select"
+
+[node name="Bbtn" type="HBoxContainer" parent="GameDetails/ButtonIndicator" unique_id=1014093360]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="GameDetails/ButtonIndicator/Bbtn" unique_id=1999085364]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("55_670wg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/ButtonIndicator/Bbtn" unique_id=1729888245]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Back"
+
+[node name="Xbtn" type="HBoxContainer" parent="GameDetails/ButtonIndicator" unique_id=393055254]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Button" type="TextureRect" parent="GameDetails/ButtonIndicator/Xbtn" unique_id=804445928]
+custom_minimum_size = Vector2(33, 33)
+layout_mode = 2
+texture = ExtResource("56_kk87v")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GameDetails/ButtonIndicator/Xbtn" unique_id=990904133]
+custom_minimum_size = Vector2(0, 28.38)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("9_eehda")
+theme_override_font_sizes/font_size = 20
+text = "Details"
+
+[node name="Logo" type="TextureRect" parent="GameDetails" unique_id=433419657]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -311.0
+offset_top = -134.0
+offset_right = -111.0
+offset_bottom = -59.0
+grow_horizontal = 0
+grow_vertical = 0
+expand_mode = 1
+stretch_mode = 5
 
 [connection signal="request_completed" from="HomeDash/NetworkRequests/GetInsider" to="HomeDash" method="_on_insider_request_completed"]
 [connection signal="request_completed" from="HomeDash/NetworkRequests/GetInsider/Insider-GetAdImage" to="HomeDash" method="insider_get_ad_image_rc"]

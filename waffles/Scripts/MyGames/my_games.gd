@@ -32,6 +32,7 @@ func GetRecentGames():
 				
 				var file = FileAccess.open("user://USERDATA/GAME/" + str(int(recentdict["Game" + str(loopcount)])) + "/meta.txt", FileAccess.READ)
 				var metadict = JSON.parse_string(file.get_as_text())
+				$PanelBG/Container/VBoxContainer/GAME.GameID = int(recentdict["Game" + str(loopcount)])
 				$PanelBG/Container/VBoxContainer/GAME/Title.text = metadict.Title
 				$PanelBG/Container/VBoxContainer/GAME/Developer.text = metadict.Developer
 				await GetIcon(int(recentdict["Game" + str(loopcount)]))
@@ -112,7 +113,14 @@ func _input(_event: InputEvent) -> void:
 				$PanelBG/Container/VBoxContainer.position.y += 62
 				$PanelBG/Footer/Counter.text = str(Recent_Selection) + " of " + str($PanelBG/Container/VBoxContainer.get_child_count())
 		elif Input.is_action_just_released("A"):
-			pass
+			$"..".CurrentMenu = "INPUTLOCKED"
+			$"../GameDetails".GetGame(get_node("PanelBG/Container/VBoxContainer/" + str(Recent_Selection)).GameID)
+			$AnimationPlayer.play("FadeOut")
+			$"../GameDetails/AnimationPlayer".play("FadeIn")
+			$"../GameDetails".show()
+			await $AnimationPlayer.animation_finished
+			$"..".CurrentMenu = "GameDetails"
+			$".".hide()
 		elif Input.is_action_just_released("B"):
 			$"..".CurrentMenu = "INPUTLOCKED"
 			$AnimationPlayer.play("FadeOut")
