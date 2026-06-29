@@ -12,7 +12,6 @@ current stuff thats done:
 what needs to be finished:
   - music player playlists
   - games collections page
-  - game details page
   - system settings
   - dashboard channel cards
   - marketplace
